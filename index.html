@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/img/iconnn.png">
+        <title>Porfolio</title>
+        <link rel="stylesheet"
+            href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Open+Sans:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div id="main">
+            <header id="header">
+                <div class="hd-left">
+                    <img src="./assets/img/logo/logo-light1.png" alt=""
+                        class="logo">
+                </div>
+
+                <ul id="nav" class="menu">
+                    <li class="item-li" onclick="onClick(event)"><a href="#slideshow" id="ahome" class="menu-item text-dark-s">Trang chủ</a></li>
+                    <li class="item-li" onclick="onClick(event)" ><a href="#about" id="aabt" class="menu-item text-dark-s">Giới thiệu</a></li>
+                    <li class="item-li" onclick="onClick(event)"><a href="#experience" id="aex" class="menu-item text-dark-s">Kinh nghiệm</a></li>
+                    <li class="item-li" onclick="onClick(event)">
+                        <a href="#project" id="apj" class="menu-item text-dark-s">
+                            Dự án
+                            <i class="icon-dropdown ti-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="text-dark-s" href="./tutor_desc.html#wrapper-mobile">
+                                    <i class="ti-mobile"></i>
+                                    Điện thoại
+
+                                </a>
+                            </li>
+                            <hr class="hr-s" width="100%" style="margin: 0
+                                auto;">
+                            <li>
+                                <a class="text-dark-s" href="./tutor_desc.html#wrapper-website">
+                                    <i class="ti-desktop"></i>
+                                    Website
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-li" onclick="onClick(event)"><a id="act" href="#contact" class="menu-item text-dark-s">Liên hệ</a></li>
+                </ul>
+                <div class="hd-right">
+                    <div class="search-form">
+                        <!-- <div class="form-field">
+                                <input type="text" class="form-input" placeholder=" ">
+                                <label for="" class="form-label" >Name</label>
+                            </div> -->
+                        <input class="input-field" type="text" placeholder="Bạn cần tìm gì?">
+                        <i class="hd-icon ti-search"></i>
+                    </div>
+                    <div id="mobile-menu" class="mobile-menu-btn">
+                        <i id="i-icon" class="ti-menu ti-close"></i>
+                    </div>
+
+                </div>
+
+
+            </header>
+            <div id="container" class="container-body">
+                <!-- Begin: Layout slider -->
+                <div id="slideshow">
+                    <div class="slide-wrapper">
+                        <div class="slide"><img src="" id="img_1">
+                        </div>
+                        <div class="slide"><img src="" id="img_2">
+                        </div>
+                        <div class="slide"><img src="" id="img_3">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <!--End: Layout slider -->
+
+                <!--Begin: Layout about -->
+                <div id="about" class="about-section">
+                    <div class="content-section">
+                        <h2 class="content-title title-secondary-l
+                            title-secondary-m title-secondary-s text-center">Đôi
+                            chút về mình</h2>
+                        <hr width="90px" style="margin: 12px auto;">
+                        <div class="main-about flex-wrap">
+                            <div class="main-about-img">
+                                <img src="./assets/img/avt2.jpg" alt="">
+                            </div>
+                            <div class="main-about-desc">
+                                <p>
+                                - Tôi mong muốn được trải nghiệm, học hỏi kĩ năng như: khả năng lắng nghe, làm việc nhóm, thuyết trình,... và trau dồi,
+                                trao đổi kiến thức chuyên môn nhằm nâng cao khả năng làm việc, đóng góp cho công ty.
+                                </p>
+                                <p>
+                                    - Tôi mong muốn được trải nghiệm, học hỏi kĩ năng như: khả năng lắng nghe, làm việc nhóm, thuyết trình,... và trau
+                                    dồi,
+                                    trao đổi kiến thức chuyên môn nhằm nâng cao khả năng làm việc, đóng góp cho công ty.
+                                </p>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End: Layout about -->
+
+                <!--Begin: Layout experience -->
+                <div id="experience" class="exp-section">
+                    <div class="content-section">
+                        <h2 class="content-title title-secondary-l
+                            title-secondary-m title-secondary-s
+                            text-center">Kinh nghiệm làm việc</h2>
+                        <hr width="90px" style="margin: 12px auto;">
+                        <div class="main-exp main-exp-block flex-wrap">
+                            <!-- <div class="main-exp-item">
+                                <img
+                                    src="./assets/img/shopmepu.jpg"
+                                    alt="">
+                                <div class="exp-desc text-center-mobile">
+                                    <h3 class="exp-desc__title text-dark">
+                                        Cửa hàng thời trang
+                                    </h3>
+                                    <p class="exp-desc__position text-dark">
+                                        
+                                    </p>
+                                    <p class="exp-desc__position">
+                                        Part-time
+                                    </p>
+                                </div>
+                            </div> -->
+
+                            <div class="main-exp-item">
+                                <img
+                                    src="./assets/img/igap.jpg"
+                                    alt="">
+                                <div class="exp-desc text-center-mobile">
+                                    <h3 class="exp-desc__title text-dark">
+                                        IGap Logistic VietNam
+                                    </h3>
+                                    <p class="exp-desc__position text-dark">
+                                        05/2021-07/2021
+                                    </p>
+                                    <p class="exp-desc__position">
+                                        Thực tập sinh Reactjs
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="main-exp-item">
+                                <img
+                                    src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2022/12/trong-kinh-chemi-u6-1.jpg"
+                                    alt="">
+                                <div class="exp-desc text-center-mobile">
+                                    <h3 class="exp-desc__title text-dark">
+                                        Công ty TNHH Chemilends 
+                                    </h3>
+                                    <p class="exp-desc__position text-dark">
+                                        12/2021-01/2023
+                                    </p>
+                                    <p class="exp-desc__position">
+                                        Nhân viên thời vụ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End: Layout experience -->
+
+                <!--Begin: Layout project -->
+                <div id="project" class="project-section">
+                    <div class="content-section">
+                        <h2 class="content-title title-secondary-l
+                            title-secondary-m title-secondary-s text-center">Dự
+                            án cá nhân</h2>
+                        <hr width="90px" style="margin: 12px auto;">
+                        <div class="main-project">
+                            <div class="tab-project">
+                                <div class="tab-btn">
+                                    <button id="tu" onclick="openTab(event,
+                                        'tutor')" class="btn-tab tab-tu">
+                                        <i class="ti-mobile"></i>
+                                        Điện thoại
+                                    </button>
+                                    <button id="por" onclick="openTab(event,
+                                        'porfolio')" class="btn-tab tab-po">
+                                        <i class="ti-desktop"></i>
+                                        Website
+                                    </button>
+                                </div>
+                                <div id="tutor" class="tab-content">
+                                    <div class="layout-tab">
+                                        <div class="item-tab item-tab-left">
+                                            <img class="tab-img-mobile
+                                                tab-m-left"
+                                                src="./assets/img/slider/tutor.jpg"
+                                                alt="anh1">
+
+                                            <img class="tab-img-mobile
+                                                tab-m-right"
+                                                src="./assets/img/slider/tutor3.jpg"
+                                                alt="anh3">
+                                        </div>
+                                        <div class="item-tab item-tab-right">
+                                            <h2 class="tab-title">Ứng dụng quản lý gia sư</h2>
+                                            <p class="tab-desc">
+                                                Trong xã hội hiện nay nhu cầu tìm kiếm gia sư cũng như học thêm là ngày càng được xã hội quan tâm. Các trung tâm gia sư
+                                                cũng vì thế mà xuất hiện nhiều. Họ cung cấp các dịch vụ giảng dạy, cung cấp nguồn nhân lực gia sư cho mọi đối tượng
+                                                trong xã hội...
+                                            </p>
+                                            <a href="./tutor_desc.html#wrapper-website"
+                                                
+                                                class="tab-continute">
+                                                Continute
+                                                <i class="ti-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="porfolio" class="tab-content">
+                                    <div class="layout-tab">
+                                        <div class="tab-item mt-8">
+                                            <img
+                                                src="./assets/img/slider/yuki.jpg"
+                                                alt="">
+                                            <div class="tab-item-below">
+                                                <h2 class="tab-title
+                                                    tabtitle-item">Porfolio
+                                                    weblite</h2>
+                                                <p class="tab-desc
+                                                    tabdesc-item">
+                                                    Lorem ipsum dolor sit
+                                                </p>
+                                                <p class="tab-time
+                                                    tabtime-item">10/10/2021-10/12/2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item mt-8">
+                                            <img
+                                                src="./assets/img/slider/yuki.jpg"
+                                                alt="">
+                                            <div class="tab-item-below">
+                                                <h2 class="tab-title
+                                                    tabtitle-item">Porfolio
+                                                    weblite</h2>
+                                                <p class="tab-desc
+                                                    tabdesc-item">
+                                                    Lorem ipsum dolor sit
+                                                </p>
+                                                <p class="tab-time
+                                                    tabtime-item">10/10/2021-10/12/2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-item mt-8">
+                                            <img
+                                                src="./assets/img/slider/yuki.jpg"
+                                                alt="">
+                                            <div class="tab-item-below">
+                                                <h2 class="tab-title
+                                                    tabtitle-item">Porfolio
+                                                    weblite</h2>
+                                                <p class="tab-desc
+                                                    tabdesc-item">
+                                                    Lorem ipsum dolor sit
+                                                </p>
+                                                <p class="tab-time
+                                                    tabtime-item">10/10/2021-10/12/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End: Layout project -->
+                <!--Begin: Layout contact -->
+                <div id="contact" class="contact-section">
+                    <div class="content-section">
+                        <h2 class="content-title title-secondary-l
+                            title-secondary-m title-secondary-s
+                            text-center">Thông tin liên hệ</h2>
+                        <hr width="90px" style="margin: 12px auto;">
+                        <div class="main-contact flex-wrap">
+                            <div class="contact-form">
+                                <div class="lettalk-form">
+                                    <h3 class="contact-title">Liên hệ với mình
+                                        nhé</h3>
+                                    <div class="letstalk letstalk-1">
+                                        <div class="form-field">
+                                            <input type="text"
+                                                class="form-input" placeholder="
+                                                ">
+                                            <label for="" class="form-label">Name</label>
+                                        </div>
+                                        <div class="form-field">
+                                            <input type="text"
+                                                class="form-input" placeholder="
+                                                ">
+                                            <label for="" class="form-label">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="letstalk letstalk-2">
+                                        <div class="form-field">
+                                            <input type="text"
+                                                class="form-input" placeholder="
+                                                ">
+                                            <label for="" class="form-label">Message</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn-sendMess padding-btn">Send
+                                        Message</button>
+                                </div>
+
+                            </div>
+
+                            <div class="contact-show">
+                                <h2 class="contact-title" style="text-align:
+                                    left;">Thông tin của mình</h2>
+                                <div class="info-form">
+                                    <p>Hanh Vo</p>
+                                    <p>+84 97 657 36 07</p>
+                                    <p>vohanh48@gmail.com</p>
+                                    <p>Phường 1, Gò Vấp, TP HCM</p>
+                                    <p>
+                                        <i class="ti-facebook"></i>
+                                        <i class="ti-email"></i>
+                                        <i class="ti-github"></i>
+                                        <i class="ti-instagram"></i>
+                                    </p>
+                                </div>
+                                <!-- <div class="form-field">
+                                    <input type="text" class="form-input" placeholder=" ">
+                                    <label for="" class="form-label" >Name</label>
+                                </div> -->
+                            </div>
+
+                            <!-- <div class="clear"></div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--End: Layout contact -->
+
+            </div>
+            <footer id="footer" class="ft">
+                <p>©Copyright 2023 by HanhVo. All rights reserved.</p>
+            </footer>
+
+        </div>
+
+        <script>
+
+
+
+    </script>
+
+
+        <script>
+        var tab = document.getElementById("tutor").style.display = "block";
+        document.getElementById("tu").style.backgroundColor = "#15cbeb";
+        document.getElementById("tu").style.color ="#fff"
+        //  var colorBtn = document.querySelector(".tab-tu").style.backgroundColor = "" 
+        // var btnTab = document.querySelectorAll('.btn-tab');
+        // var currentTab = this.tab;
+        function openTab(event, tabName) {
+            var i, tabBtn, tabContent;
+            tabContent = document.getElementsByClassName("tab-content");
+            
+            for( i =0; i < tabContent.length; i++ ) {
+                tabContent[i].style.display = "none";
+            }
+            tabBtn = document.getElementsByClassName("btn-tab");
+            for( i = 0; i < tabBtn.length; i++) {
+
+                tabBtn[i].className = tabBtn[i].className.replace("active", "");
+
+                if( tabBtn[i].className==="active"){
+                    tabBtn[i].style.backgroundColor ="#15cbeb";
+                    tabBtn[i].style.color ="#fff"
+                } else {
+                    tabBtn[i].style.backgroundColor = null;
+                    tabBtn[i].style.color = null
+                }
+            }
+             var a = document.getElementById(tabName).style.display = "block";
+             console.log("tabName: " + tabName);
+             var c = event.currentTarget.className += " active";
+             
+             console.log("event: " + c);
+
+        }
+    </script>
+        <script>
+        // var navi = document.getElementById(".menu").style.display = "";
+        let btnMenu = document.getElementById("mobile-menu");
+        let iIcon = document.getElementById("i-icon");
+        console.log(iIcon);
+        
+
+        
+
+        // Đóng mở menu
+
+        btnMenu.onclick = function () {
+            if(document.getElementById("nav").style.display === "block") {
+                document.querySelector(".menu").style.display = "none";
+                document.querySelector(".container-body").style.filter = "none";
+                document.querySelector(".ft").style.filter = "blur(0px)";
+                iIcon.className = iIcon.className.replace("ti-close", "ti-menu");
+                
+                
+                
+            }
+            else {
+                document.querySelector(".menu").style.display = "block";
+                document.querySelector(".container-body").style.filter = "blur(4px)";
+                document.querySelector(".ft").style.filter = "blur(4px)";
+                iIcon.className = iIcon.className.replace("ti-menu", "ti-close");
+               
+            }
+
+            let chooseMenuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            for (let i = 0; i < chooseMenuItems.length; i++) {
+                let chooseMenuItem = chooseMenuItems[i];
+                chooseMenuItem.onclick = function (evt) {
+                    let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-menu');
+                    if (!isParentMenu) {
+                        document.querySelector(".menu").style.display = "none";
+                        document.querySelector(".container-body").style.filter = "none";
+                        document.querySelector(".ft").style.filter = "none";
+                        iIcon.className = iIcon.className.replace("ti-close", "ti-menu");
+
+                    }
+                    else {
+                        evt.preventDefault();
+                    }
+                }
+
+            }
+
+        }
+
+        //Tự đóng khi chọn menu
+        
+
+    </script>
+        <!-- Scroll sticky header -->
+        <script>
+        $(document).ready(function () {
+            $(window).scroll(function(){
+                if($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                }
+                else {
+                    $('header').removeClass('sticky');
+                }
+            })
+        })
+    </script>
+    <script>
+     
+            let a = document.getElementsByClassName('item-li');
+
+            function onClick(e) {
+                for(var i = 0; i < a.length; i++) {
+                    let itemLi = a[i];
+                    itemLi.className = itemLi.className.replace("active", "");
+                }
+                e.currentTarget.className += ' active';
+            }
+
+       
+    </script>
+
+    <!-- Sidebar Api Hình ảnh -->
+    <script>
+        function httpGetAsync(theUrl, resolve) {
+            var xlmHttp = new XMLHttpRequest();
+            xlmHttp.onreadystatechange = function() {
+                if(xlmHttp.readyState == 4 && xlmHttp.status == 200) resolve(xlmHttp)
+            };
+            xlmHttp.open("GET", theUrl, true);
+            xlmHttp.send(null);
+        }
+        const promise_1 = new Promise((resolve, reject) => {
+            httpGetAsync('https://picsum.photos/1500/800', resolve)
+        });
+        const promise_2 = new Promise((resolve, reject) => {
+            httpGetAsync('https://picsum.photos/1500/800', resolve)
+        });
+        const promise_3 = new Promise((resolve, reject) => {
+            httpGetAsync('https://picsum.photos/1500/800', resolve)
+        });
+        const excuteAsync = async () => {
+            try {
+                const reponse1 = await promise_1;
+                document.getElementById('img_1').setAttribute("src", reponse1.responseURL);
+                const response2 = await promise_2;
+                document.getElementById('img_2').setAttribute("src", response2.responseURL);
+                const response3 = await promise_3;
+                document.getElementById('img_3').setAttribute("src", response3.responseURL);
+
+            } catch(err) {
+                console.log(err);
+            }
+        }
+        excuteAsync();
+    </script>
+    </body>
+</html>

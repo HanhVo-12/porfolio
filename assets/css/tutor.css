@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text-title-h2 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1.6;
+}
+.text-title-h3 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.6;
+}
+#header {
+    width: 100%;
+}
+#header a.menu-item{
+    color: #084c61 !important;
+}
+
+.menu{
+    text-align: center;
+}
+
+#header.sticky {
+	opacity: 1 !important;
+}
+#wrapper-mobile {
+    display: block;
+}
+
+#wrapper-mobile .sidebar{
+    width: 15%;
+    position: fixed;
+    min-height: 1200px;
+}
+
+
+#wrapper-mobile .content{
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 15%;
+    min-height: 700px;
+}
+#wrapper-mobile .nav-sidebar {
+ padding-top: 16px;   
+}
+
+
+#wrapper-mobile .menu-sidebar li{
+    padding: 24px 24px;
+    width: 100%;
+}
+
+#header ul.menu li:hover,
+#wrapper-mobile .menu-sidebar li:hover{
+    background-color: #15cbeb;
+}
+#header ul.menu li:hover a.menu-item,
+#wrapper-mobile .menu-sidebar li:hover a.item-menu-sidebar {
+    color: white !important;
+}
+#wrapper-mobile .item-menu-sidebar {
+    color: #084c61;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+
+
+
+#layout-genaral{
+    display: block;
+    width: 100%;
+    min-height: 700px; 
+    padding: 24px;
+}
+
+#layout-genaral .text-content {
+    margin-top: 8px;
+    background-color: #333;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+}
+#layout-genaral .text-content p {
+    text-align: justify;
+    margin: 32px;
+    line-height: 1.6;
+}
+#layout-genaral .item-genaral {
+    margin-top: 16px;
+}
+#layout-genaral .item-genaral p{
+    margin-top: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.item-genaral img{
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+}
+#layout-genaral .usecase-model {
+    text-align: center;
+}
+
+
+#layout-tutor{
+    display: none;
+    width: 100%;
+    min-height: 700px;
+    background-color: yellow;
+}
+#layout-student{
+    display: none;
+    width: 100%;
+     min-height: 700px;
+    background-color: red;
+}
+#layout-admin{
+    display: none;
+    width: 100%;
+     min-height: 700px;
+    background-color: green;
+}
+
+
+
+
+
+#wrapper-website {
+    display: none;
+}
+.ft{
+    background-color: #084c61 !important;
+}
+.ft p{
+    color: white;
+}

@@ -1,0 +1,211 @@
+/* PC */
+
+@media (min-width: 1024px) {
+
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* Tablet and mobile*/
+@media (max-width:1023px) {
+
+    #header .menu-item {
+        padding: 0 8px !important;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    p {
+        font-size: 15px !important;
+    }
+
+
+    .mt-8 {
+        margin: 0 8px !important;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    .hd-right {
+        margin: auto 0 !important;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        text-align: left;
+    }
+
+    #header .menu>li {
+        padding-inline: 24px;
+        display: block;
+    }
+
+    #header a.menu-item {
+        color: #333;
+    }
+
+    #header .sub-menu {
+        right: 100%;
+        top: 0;
+    }
+
+    .letstalk-1 .input-item {
+        width: 100%;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width:1023px) {
+    .title-primary-m {
+        font-size: 30px !important;
+    }
+
+    .title-secondary-m {
+        font-size: 22px !important;
+    }
+
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .title-primary-s {
+        font-size: 26px !important;
+    }
+
+    .title-secondary-s {
+        font-size: 20px !important;
+    }
+
+    .text-center-mobile {
+        text-align: center !important;
+    }
+
+    .padding-btn {
+        padding: 13px 12px !important;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    /* #header .hd-right {
+        width: 100%;
+    } */
+    #header .menu li {
+        display: block;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .main-about-img {
+        margin-inline: auto;
+    }
+
+    .exp-section .main-exp-block {
+        display: block !important;
+    }
+
+    .exp-section .main-exp img {
+        margin-inline: auto;
+    }
+
+    .main-exp-item {
+        margin-block: 24px;
+    }
+
+    .contact-form .btn-sendMess {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    #porfolio div.layout-tab {
+        display: block;
+        margin: 0;
+    }
+
+    .tab-project .btn-tab {
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    @media (max-width: 470px) {
+        #header .hd-right {
+            width: 100% !important;
+            justify-content: space-around;
+        }
+        .text-dark-s {
+            color: #333 !important;
+        }
+
+        #header .hd-left {
+            margin-block: auto;
+        }
+
+        #header div.hd-left .logo {
+            height: 24px;
+        }
+
+        ul.menu {
+            left: 0;
+        }
+
+        .hr-s {
+            width: 30%;
+        }
+
+        #header ul.sub-menu {
+            text-align: center;
+            font-size: 13px;
+            box-shadow: none;
+            position: static;
+        }
+
+        .menu li:hover .menu-item {
+            color: #15cbeb !important;
+        }
+
+        .sub-menu li:hover>a {
+            color: #15cbeb !important;
+        }
+
+        #container div#slideshow{
+            height: 350px;
+        }
+        div.exp-desc {
+            background-color: #000;
+        }
+        p.exp-desc__position{
+            color: white;
+        }
+        h3.exp-desc__title, p.exp-desc__position {
+            color: white !important;
+        }
+        .exp-section div.main-exp img{
+            border-radius: 4px;
+        }
+        div.layout-tab {
+            display: block;
+        }
+        div.contact-show {
+            padding: 22px 42px;
+        }
+      
+    }
+
+
+
+
+}
